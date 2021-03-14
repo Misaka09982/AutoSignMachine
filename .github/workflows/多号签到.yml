@@ -69,7 +69,7 @@ jobs:
     - name: Run unicom daily task
       env:
         user: ${{secrets.unicom_user}}
-        password: ${{secrets.unicom_password}
+        password: ${{secrets.unicom_password}}
         user2: ${{secrets.unicom_user2}}
         password2: ${{secrets.unicom_password2}}
         appid: ${{secrets.unicom_appid}}

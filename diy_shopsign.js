@@ -1,8 +1,7 @@
 /*
 店铺签到，各类店铺签到，有新的店铺直接添加token即可
-[task_local]
-#取关京东店铺商品
-55 23 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_unsubscribe.js, tag=取关京东店铺商品, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+[Script]
+cron "55 23 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_unsubscribe.js,tag=取关京东店铺商品
 */
 
 const $ = new Env('跑路·······');

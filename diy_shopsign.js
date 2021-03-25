@@ -1,6 +1,15 @@
 /*
-店铺签到，各类店铺签到，有新的店铺直接添加token即可
-取关京东店铺商品 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_unsubscribe.js, cronexpr="55 23 * * *", timeout=3600, enable=true
+============Quantumultx===============
+[task_local]
+#店铺签到
+0 0 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_unsubscribe.js, tag=店铺签到, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+===========Loon============
+[Script]
+cron "0 0 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_unsubscribe.js,tag=店铺签到
+============Surge=============
+店铺签到 = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_unsubscribe.js
+===========小火箭========
+店铺签到 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_unsubscribe.js, cronexpr="0 0 * * *", timeout=3600, enable=true
 */
 
 const $ = new Env('跑路·······');

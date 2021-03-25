@@ -1,7 +1,6 @@
 /*
 店铺签到，各类店铺签到，有新的店铺直接添加token即可
-[Script]
-cron "55 23 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_unsubscribe.js,tag=取关京东店铺商品
+店铺签到 = type=cron,cronexp="55 23 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_unsubscribe.js
 */
 
 const $ = new Env('跑路·······');
